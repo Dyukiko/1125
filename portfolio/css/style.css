@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body {
+  text-align: center;
+  background-color: #ffc0cb;
+  color: #66a5ad
+}
+img {
+  width: 100%;
+}
+.sns-link {
+  display: flex;
+  margin-top: 20px;
+  color: #66a5ad;
+}
+.sns-link div {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+}
+header {
+  background-color: #325bff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.menu-icon {
+  cursor: pointer;
+  width: 30px;
+  display: inline-block;
+}
+
+.bar {
+  height: 4px;
+  width: 30px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+#menu-toggle {
+  display: none;
+}
+#menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+h1 {
+  font-family: "curve", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size:60px;
+  text-align:left
+}
+.nav-sp {
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  background-color: green;
+  border-radius: 100vh;
+  color: #fff;
+  text-align: center;
+}
+p {
+  text-align:left
+}
+p.dc span {
+  position: absolute;
+  bottom: 620px;
+  left: 20px;
+}
+h2 {
+  font-family: "curve", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 55px;
+}
+h3 {
+  font-size: 30px;
+  text-align:left
+}
+h3.kageyama span {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+}
+h4.kageyama span {
+  font-size: 20px;
+  position: absolute;
+  bottom: -35px;
+  left: 15px;
+}
+h4 {
+  text-align:left
+}
+p.kageyama span {
+  position: absolute;
+  bottom: -200px;
+  left: 15px;
+}
+
+h3.yukiko span {
+  display: block;
+  text-align: right;
+}
+p.contact span {
+  display: block;
+  text-align: right;
+}
+.underline {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+  /* テキストと円の間にスペースを作成 */
+  border-bottom: 1px solid #66a5ad;
+  /* 下線を追加 */
+  width: 90%;
+  }
+
+  .underline::before,
+  .underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  /* 下線と円の位置を合わせる */
+  width: 6px;
+  height: 6px;
+  background-color: #66a5ad;
+  border-radius: 50%;
+  }
+
+  .underline::before {
+  left: 0;
+  /* 左側の円 */
+  transform: translateX(-50%);
+  }
+
+  .underline::after {
+  right: 0;
+  /* 右側の円 */
+  transform: translateX(50%);
+  }
+
+  .image-box {
+  margin:0 auto;
+  width: fit-content;
+  border: 2px solid white; /* 白い外枠 */
+  border-radius: 0 100px 0 100px; /* 角を丸める */
+  overflow: hidden;
+  width: 330px;
+  }
+
+  .image-box img {
+  display: block;
+  }
